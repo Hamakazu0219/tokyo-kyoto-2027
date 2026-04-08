@@ -308,11 +308,11 @@ export default function App() {
           >
             <Badge className="mb-4 bg-slate-900 hover:bg-slate-900 text-white">2027年度 国語入試対策</Badge>
             <h1 className="text-4xl lg:text-6xl font-bold tracking-tight leading-tight">
-              東大・京大の学部入試対策を
-              <span className="block">比較しながら学べるサイト</span>
+              東大・京大の国語を攻略する
+              <span className="block">戦術を比較して学べるサイト</span>
             </h1>
             <p className="mt-6 text-lg text-slate-600 leading-8 max-w-3xl">
-              直近5年の分析をもとに、出題構造・揺れやすい論点・2027年度に向けた学習優先順位を整理しました。大学ごとの違いを見える化し、日々の学習計画まで落とし込める構成です。
+              直近5年の徹底分析をもとに、君が2027年度入試で突破すべき壁を整理しました。大学ごとの『求められる力』の違いを視覚化し、今日からの学習計画に直結する構成です。
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Button className="rounded-2xl">学習戦略を見る</Button>
@@ -329,8 +329,8 @@ export default function App() {
         <section>
           <SectionTitle
             icon={BarChart3}
-            title="このサイトで押さえる3つの視点"
-            subtitle="傾向把握だけで終わらせず、答案作成までつなげるための整理です。"
+            title="合格のために押さえる3つの視点"
+            subtitle="傾向を知るだけで終わらせず、実際の答案で点をもぎ取るための指針です。"
           />
           <div className="grid md:grid-cols-3 gap-4">
             {metrics.map((item) => {
@@ -451,8 +451,8 @@ export default function App() {
         <section>
           <SectionTitle
             icon={BookOpen}
-            title="学習者向けQ&A"
-            subtitle="授業・自学・添削指導にそのまま使いやすい形で要点をまとめています。"
+            title="受験生のためのQ&A"
+            subtitle="自学自習や過去問演習で迷ったときに、立ち返るべき指針をまとめています。"
           />
           <Card className="rounded-2xl shadow-sm border-slate-200">
             <CardContent className="pt-2">
@@ -476,9 +476,9 @@ export default function App() {
                   </AccordionContent>
                 </AccordionItem>
                 <AccordionItem value="q4">
-                  <AccordionTrigger>授業や講座で使うなら、どの部分を中心に見せると効果的ですか？</AccordionTrigger>
+                  <AccordionTrigger>独習や過去問演習の際、どのようにこのサイトを活用すれば良いですか？</AccordionTrigger>
                   <AccordionContent className="text-slate-600 leading-7">
-                    まずは比較表と学習ロードマップです。入試の違いを一目で理解させたあと、実際の答案づくりにどう落とすかを示すと、学習者の行動につながりやすくなります。
+                    まずは「比較表」で大学ごとの特徴の違いを頭に入れましょう。その上で「学習ロードマップ」を確認し、今の時期に自分がどの段階（型作りなのか、実戦訓練なのか）にいるべきかを再確認してください。演習で迷ったときは、このサイトの「2027で意識する軸」に立ち返るのがおすすめです。
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
