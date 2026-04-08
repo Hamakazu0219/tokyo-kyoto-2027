@@ -315,8 +315,8 @@ export default function App() {
               直近5年の徹底分析をもとに、君が2027年度入試で突破すべき壁を整理しました。大学ごとの『求められる力』の違いを視覚化し、今日からの学習計画に直結する構成です。
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <Button className="rounded-2xl">学習戦略を見る</Button>
-              <Button variant="outline" className="rounded-2xl">大学別比較を見る</Button>
+              <Button className="rounded-2xl" onClick={() => document.getElementById('roadmap')?.scrollIntoView({ behavior: 'smooth' })}>学習戦略を見る</Button>
+              <Button variant="outline" className="rounded-2xl" onClick={() => document.getElementById('comparison')?.scrollIntoView({ behavior: 'smooth' })}>大学別比較を見る</Button>
             </div>
             <div className="mt-8 rounded-3xl border border-slate-200 bg-slate-50 p-5 text-slate-700 leading-7">
               {currentMessage}
@@ -355,7 +355,7 @@ export default function App() {
           </div>
         </section>
 
-        <section>
+        <section id="features">
           <SectionTitle
             icon={GraduationCap}
             title="大学別の特徴"
@@ -387,7 +387,7 @@ export default function App() {
           {selected === "kyoto" && <UniversityPanel data={kyoto} />}
         </section>
 
-        <section>
+        <section id="comparison">
           <SectionTitle
             icon={Target}
             title="東大・京大 比較表"
@@ -419,7 +419,7 @@ export default function App() {
           </Card>
         </section>
 
-        <section>
+        <section id="roadmap">
           <SectionTitle
             icon={Clock3}
             title="2027年度に向けた学習ロードマップ"
